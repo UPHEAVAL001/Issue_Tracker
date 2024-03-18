@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
-const url = 'mongodb+srv://akhilpratapsingh0256:x2BQrNTjvA5qQEYC@cluster0.ufnpxq1.mongodb.net/db?retryWrites=true&w=majority&appName=Cluster0';
+const dotenv = require('dotenv');
+dotenv.config();
+const url = process.env.MONGOURL;
 // mongoose.connect('url')
 
 const db = mongoose.connect(url).then(()=>{
