@@ -10,7 +10,7 @@ module.exports.create = async function (req, res) {
       description: req.body.description,
       author: req.body.author,
     });
-    return res.redirect('back');
+    return res.redirect('/');
   } catch (err) {
     console.log(err);
     return res.redirect('back');
@@ -20,6 +20,8 @@ module.exports.create = async function (req, res) {
 //Delete a project
 module.exports.delete = async function(req,res){
   try{
+    let project = await Project.findById(req.params.id);
+    await Issue.deleteMany({_id: {$in: project.issues}});
     await Project.findByIdAndDelete(req.params.id);
     return res.redirect('back');
   }catch(err){
