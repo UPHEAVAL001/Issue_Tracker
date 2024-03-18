@@ -1,20 +1,20 @@
-**Issue Tracker**
+## Issue Tracker
 
 
-**Problem statement**
+## Problem statement
 
 Create a nodejs + ejs  application to track issues/bugs for a project. Read the Features below on what to implement. You can take inspiration from Github issue tracker or some other application.
 
 
-**Features**
+## Features
 
-**Home Page**
+### Home Page
 
 1.  Show a list of projects.
 2.  Give a button to create a new Project (On creating a new project it should appear in the list)
 
 
-**Create Project Page**
+### Create Project Page
 
 1.  Accept the following fields to create a project
 2.  Name
@@ -22,7 +22,7 @@ Create a nodejs + ejs  application to track issues/bugs for a project. Read the 
 4.  Author
 
 
-**Project Detail Page**
+### Project Detail Page
 
 
 1.  When the user clicks on a project (in home page) redirect the user to this page which will show bugs related to this project
@@ -33,7 +33,7 @@ Create a nodejs + ejs  application to track issues/bugs for a project. Read the 
 6.  A button to create an issue
 
 
-**Create issue page**
+### Create issue page
 
 
 1.  User should be able to create an issue for a project
@@ -42,3 +42,29 @@ Create a nodejs + ejs  application to track issues/bugs for a project. Read the 
 4.  Description
 5.  Labels (multiple labels can be added to a project, IF a project has a label already show it (in dropdown) as the user types the label in)
 6.  Author
+
+<!-- GETTING STARTED -->
+
+## Getting Started
+
+-  Clone this project
+-  Start by installing npm and mongoDB if you don't have them already.
+-  Run the Mongo Server.
+
+### Prerequisites
+
+This is an example of how to list things you need to use the software and how to install them.
+
+-  npm
+   ```sh
+   npm install npm@latest -g
+   ```
+
+### Installation
+
+1. Clone the repo
+   
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
