@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const url = 'mongodb://127.0.0.1/db';
+const url = 'mongodb://localhost:27017/db';
 // mongoose.connect('url') 
 mongoose.connect(url);
 const db=mongoose.connection;
