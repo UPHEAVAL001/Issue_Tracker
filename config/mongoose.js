@@ -4,7 +4,7 @@ dotenv.config();
 const url = process.env.MONGOURL;
 // mongoose.connect('url')
 
-const db = mongoose.connect(url).then(()=>{
+const db = mongoose.connect(url ,  { tls: true }).then(()=>{
     console.log("Database connected successfully");
 }).catch(error => console.log(error));
 
