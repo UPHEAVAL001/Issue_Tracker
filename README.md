@@ -1,21 +1,21 @@
-Issue Tracker
+**Issue Tracker**
 
 
-Problem statement
+**Problem statement**
 Create a nodejs + ejs  application to track issues/bugs for a project. Read the Features below on what to implement. You can take inspiration from Github issue tracker or some other application.
 
 
-Features
+**Features**
 
-Home Page
+**Home Page**
 Show a list of projects.
 Give a button to create a new Project (On creating a new project it should appear in the list)
-Create Project Page
+**Create Project Page**
 Accept the following fields to create a project
 Name
 Description
 Author
-Project Detail Page
+**Project Detail Page**
 When the user clicks on a project (in home page) redirect the user to this page which will show bugs related to this project
 User should be able to perform following actions on this page
 Filter by multiple labels i.e. I should be able to filter by 2 or more labels at the same time
